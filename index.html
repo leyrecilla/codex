@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leyre · Demo App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">leyre</div>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="badge">App reconstruida</p>
+        <h1>Landing moderna con las mismas características clave</h1>
+        <p>
+          Esta versión replica el estilo de una app tipo portfolio/servicios:
+          hero principal, tarjetas destacadas, proceso en pasos y formulario de contacto.
+        </p>
+        <div class="actions">
+          <button id="demoBtn" class="primary">Solicitar demo</button>
+          <a href="#servicios" class="secondary">Ver servicios</a>
+        </div>
+      </section>
+
+      <section id="servicios" class="grid">
+        <article class="card">
+          <h3>Diseño UX/UI</h3>
+          <p>Interfaces limpias, claras y orientadas a conversión.</p>
+        </article>
+        <article class="card">
+          <h3>Desarrollo web</h3>
+          <p>Frontend responsive con buena performance y accesibilidad.</p>
+        </article>
+        <article class="card">
+          <h3>Automatización</h3>
+          <p>Formularios inteligentes y flujos sencillos para captación.</p>
+        </article>
+      </section>
+
+      <section id="proceso" class="timeline">
+        <h2>Proceso de trabajo</h2>
+        <ol>
+          <li><strong>Descubrimiento:</strong> objetivos, contenido y público.</li>
+          <li><strong>Prototipo:</strong> estructura y diseño visual.</li>
+          <li><strong>Entrega:</strong> publicación y soporte inicial.</li>
+        </ol>
+      </section>
+
+      <section id="contacto" class="contact">
+        <h2>Contacto rápido</h2>
+        <form id="contactForm">
+          <label>
+            Nombre
+            <input type="text" name="nombre" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Mensaje
+            <textarea name="mensaje" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="primary">Enviar</button>
+        </form>
+        <p id="formStatus" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <small>© <span id="year"></span> leyre</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
